@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/review/choose-address/choose-address",    
+    "pages/review/login/login",    
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "爱家微社区",
+    "navigationBarTextStyle": "black"
+  }
+}

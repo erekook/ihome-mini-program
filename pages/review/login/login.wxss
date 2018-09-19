@@ -1,0 +1,39 @@
+/* pages/login/login.wxss */
+
+.title {
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  padding: 45px 0 26px 15px;
+}
+
+.content {
+  margin: 0 20px 0 20px;
+  width: calc(100% - 80px);
+  height: 450px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 45px 20px 0 20px;
+}
+
+
+.code-btn {
+  font-size: 12px;
+  width: 69px;
+  height: 23px;
+  border-radius: 4px;
+  line-height: 23px;
+  margin-top: 4px;
+  float: right;
+  padding: 0;
+}
+
+.submit-btn {
+  margin-top: 60px;
+  width: 210px;
+  height: 44px;
+  background-color: #E76055;
+  color: #fff;
+  font-size: 18px;
+}

@@ -1,0 +1,68 @@
+<view class='container' style='padding: 0 16px 0 16px;width: calc(100% - 32px)'>
+   <view class='div-item'>
+      <view class='div-item-left'>
+        <text style='font-size: 17px;'>住址</text>
+      </view>
+
+      <view class='div-item-right'>
+        <text class="fa fa-angle-right" style="margin-left: 12px;"></text>
+        <text style="font-size: 14px;">请选择</text>        
+      </view>
+    </view>
+
+    <view class='div-item'>
+      <text style='font-size: 17px;'>体验小区53栋2单元101室</text>
+    </view>
+
+    <view class='div-item'>
+      <view class='div-item-left'>
+        <text style='font-size: 17px;'>身份</text>
+      </view>
+
+      <view class='div-item-right'>
+        <text class="fa fa-angle-right" style="margin-left: 12px;"></text>
+        <text style="font-size: 14px;">请选择</text>        
+      </view>
+    </view>
+
+    <view class='div-item'>
+        <text style='font-size: 17px;'>家属</text>
+    </view>
+
+    <view class='div-item'>
+      <view class='div-item-left' style="width: 70%;display: flex;align-items: center;">
+        <text style='font-size: 17px;'>设为默认地址</text>
+        <text style="font-size: 14px;color: #999;">(通过审核后生效)</text>
+      </view>
+
+      <view class='div-item-right' style="width: 30%;">
+        <switch style="float: right"/>
+      </view>
+    </view>
+
+    <view style="width: 100%;display: flex;margin-top: 56px;">
+      <button class="btn-cancel btn">取消</button>
+      <button class="btn-submit btn">保存</button>
+    </view>
+
+</view>
+
+<view class="popup">
+    <!--<image style="width: 100%; height: 101px"></image>-->
+    <view style="width: 100%; height: 101px;background: aqua"></view>
+    <view class="choose-menu">
+        <view class="menu vh-center">珊瑚湾北区</view>
+        <view class="menu vh-center">53栋</view>
+        <view class="menu vh-center">2单元</view>
+        <view class="menu vh-center">请选择</view>
+    </view>
+
+    <view class="vh-center choose-title">
+        请选择房间
+    </view>
+
+    <view class="choose-list" wx:for="{{[1,2,3]}}">
+        体验小区
+    </view>
+</view>
+

@@ -1,0 +1,36 @@
+<view class='container'>
+  <view class='title'>
+    {{loginTitle}}
+  </view>
+  <view class='content'>
+    <view class='div-item'>
+      <view class='div-item-left'>
+        <text style='height:32px;font-size: 17px;line-height:32px;'>手机号码</text>
+      </view>
+
+      <view class='div-item-right'>
+        <input style='height:32px;text-align: right;font-size: 14px;line-height:32px;' placeholder='请输入' />
+      </view>
+    </view>
+
+    <view class='div-item' style='margin-top: 54px;'>
+      <view class='div-item-left'>
+        <input style='height:32px;font-size: 14px;line-height:32px;' placeholder='请输入验证码' />      
+      </view>
+
+      <view class='div-item-right'>
+        <button style='background-color: {{codeBtnBackColor}};color: {{codeBtnColor}}' class='code-btn'>获取验证码</button>
+      </view>
+    </view>
+
+    <!-- <view style='margin-top: 54px;font-size: 17px;color: #E76055;text-align: center;'>
+      添加住址
+    </view> -->
+
+    <view class='content-bottom'>
+      <button class='submit-btn'>下一步</button>
+    </view>
+  
+  </view>
+
+</view>
