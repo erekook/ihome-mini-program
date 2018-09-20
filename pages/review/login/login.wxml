@@ -19,7 +19,7 @@
       </view>
 
       <view class='div-item-right'>
-        <button style='background-color: {{codeBtnBackColor}};color: {{codeBtnColor}}' class='code-btn'>获取验证码</button>
+        <button style='background-color: {{codeBtnBackColor}};color: {{codeBtnColor}};' class='code-btn'>获取验证码</button>
       </view>
     </view>
 

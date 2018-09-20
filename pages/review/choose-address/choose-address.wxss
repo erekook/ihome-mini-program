@@ -49,6 +49,23 @@
 
 .popup .choose-list {
   width: 100%;
+  height: 31px;
   font-size: 14px;
-  margin: 0 0 31px 16px;
+  margin: 0 0 11px 16px;
+}
+
+.popup .choose-border {
+  position: absolute;
+  top: 141px;
+  z-index: 10;
+  width: 100%;
+  height: 1px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.popup .choose-border-item {
+  width: 15%;
+  height: 1px;
+  /*background-color: #E76055;*/
 }

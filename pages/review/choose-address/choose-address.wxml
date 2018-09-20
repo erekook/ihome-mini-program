@@ -4,14 +4,14 @@
         <text style='font-size: 17px;'>住址</text>
       </view>
 
-      <view class='div-item-right'>
+      <view class='div-item-right' bindtap="handleChooseAddress">
         <text class="fa fa-angle-right" style="margin-left: 12px;"></text>
         <text style="font-size: 14px;">请选择</text>        
       </view>
     </view>
 
-    <view class='div-item'>
-      <text style='font-size: 17px;'>体验小区53栋2单元101室</text>
+    <view class='div-item' wx:if="{{address.length > 0}}">
+      <text style='font-size: 17px;'>{{address}}</text>
     </view>
 
     <view class='div-item'>
@@ -21,12 +21,14 @@
 
       <view class='div-item-right'>
         <text class="fa fa-angle-right" style="margin-left: 12px;"></text>
-        <text style="font-size: 14px;">请选择</text>        
+          <picker bindchange="bindPickerChange" value="{{index}}" range="{{identityList}}">
+              <text style="font-size: 14px;">请选择</text>
+          </picker>
       </view>
     </view>
 
-    <view class='div-item'>
-        <text style='font-size: 17px;'>家属</text>
+    <view class='div-item' wx:if="{{identity.length > 0}}">
+        <text style='font-size: 17px;'>{{identity}}</text>
     </view>
 
     <view class='div-item'>
@@ -47,22 +49,26 @@
 
 </view>
 
-<view class="popup">
+<view class="popup" hidden="{{popupShow}}">
     <!--<image style="width: 100%; height: 101px"></image>-->
     <view style="width: 100%; height: 101px;background: aqua"></view>
     <view class="choose-menu">
-        <view class="menu vh-center">珊瑚湾北区</view>
-        <view class="menu vh-center">53栋</view>
-        <view class="menu vh-center">2单元</view>
-        <view class="menu vh-center">请选择</view>
+        <view class="menu vh-center" bindtap="handleApartment">{{apartmentName}}</view>
+        <view class="menu vh-center" bindtap="handleBuilding">{{buildingNo}}</view>
+        <view class="menu vh-center" bindtap="handleUnit">{{unit}}</view>
+        <view class="menu vh-center">{{roomNo}}</view>
+    </view>
+    <view class="choose-border">
+        <view wx:for="{{[0, 1, 2, 3]}}" wx:key="*this" style="background-color: {{active === item ? '#E76055' : '#e6e6e6'}}" class="choose-border-item" ></view>
     </view>
 
     <view class="vh-center choose-title">
-        请选择房间
+        请选择{{chooseTitle}}
     </view>
 
-    <view class="choose-list" wx:for="{{[1,2,3]}}">
-        体验小区
+    <view class="choose-list" wx:for="{{dataList}}" data-item="{{item}}" wx:key="*this" bindtap="handleChoose">
+        {{item}}
     </view>
+
 </view>
 
