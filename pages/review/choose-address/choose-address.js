@@ -82,7 +82,14 @@ Page({
    */
   handleChooseAddress: function () {
     this.setData({
-      popupShow: false
+      popupShow: false,
+      apartmentName: '请选择',
+      buildingNo: '',
+      unit: '',
+      roomNo: '',
+      chooseTitle: '小区',
+      active: 0,
+      dataList: ['体验小区1', '体验小区2', '体验小区3']
     })
   },
 

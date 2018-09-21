@@ -1,7 +1,7 @@
 {
   "pages": [
+    "pages/review/login/login",
     "pages/review/choose-address/choose-address",    
-    "pages/review/login/login",    
     "pages/index/index"
   ],
   "window": {

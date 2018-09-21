@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86a11381-3f36-457a-959c-139def99fde1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/review/choose-address/choose-address.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/review/choose-address/choose-address.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/review/choose-address/choose-address.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/review/choose-address/choose-address.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/review/choose-address/choose-address.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/review/choose-address/choose-address.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/review/login/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/review/login/login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/review/login/login.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/review/login/login.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/review/login/login.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/review/login/login.wxss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,43 +23,48 @@
     <session id="1266149026">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.35" value="1" />
+          <entry key="project.open.time.50" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="js" value="2" />
+          <entry key="js" value="4" />
+          <entry key="json" value="2" />
           <entry key="ts" value="1" />
-          <entry key="wxml" value="3" />
-          <entry key="wxss" value="7" />
+          <entry key="wxml" value="4" />
+          <entry key="wxss" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="7" />
-          <entry key="HTML" value="2" />
-          <entry key="JavaScript" value="2" />
+          <entry key="CSS" value="8" />
+          <entry key="HTML" value="3" />
+          <entry key="JSON" value="2" />
+          <entry key="JavaScript" value="4" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="TypeScript" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="1433" />
-          <entry key="wxml" value="1015" />
-          <entry key="wxss" value="484" />
+          <entry key="js" value="2317" />
+          <entry key="json" value="2" />
+          <entry key="wxml" value="1244" />
+          <entry key="wxss" value="515" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="484" />
-          <entry key="HTML" value="1015" />
-          <entry key="JavaScript" value="1433" />
+          <entry key="CSS" value="515" />
+          <entry key="HTML" value="1244" />
+          <entry key="JSON" value="2" />
+          <entry key="JavaScript" value="2317" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -71,49 +75,31 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4073705">
+    <splitter split-orientation="horizontal" split-proportion="0.72386897">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/pages/review/choose-address/choose-address.wxml">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/pages/review/login/login.wxml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="256">
-                  <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+                <state relative-caret-position="418">
+                  <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
                   <folding>
-                    <element signature="n#style#0;n#text#0;n#view#1;n#view#2;n#view#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#text#0;n#view#3;n#view#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#switch#0;n#view#1;n#view#4;n#view#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#view#5;n#view#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#view#0;n#view#1;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#view#0;n#view#2;n#view#1;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#text#0;n#view#0;n#view#0;n#view#1;n#view#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#view#1;n#view#1;n#view#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#input#0;n#view#0;n#view#1;n#view#1;n#view#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#button#0;n#view#1;n#view#1;n#view#1;n#view#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#text#0;n#view#0;n#view#2;n#view#1;n#view#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#view#2;n#view#1;n#view#0;n#!!top" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app.wxss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="19">
-                  <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/pages/review/choose-address/choose-address.js">
+            <entry file="file://$PROJECT_DIR$/pages/review/login/login.wxss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-9">
-                  <caret line="77" column="4" lean-forward="true" selection-start-line="77" selection-start-column="4" selection-end-line="77" selection-end-column="4" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/pages/review/choose-address/choose-address.wxss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="257">
-                  <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
+                <state relative-caret-position="219">
+                  <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
                 </state>
               </provider>
             </entry>
@@ -121,12 +107,21 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/pages/review/choose-address/choose-address.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="380">
-                  <caret line="98" selection-start-line="98" selection-end-line="98" />
+                <state relative-caret-position="171">
+                  <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/pages/review/login/login.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="124">
+                  <caret line="115" column="10" lean-forward="true" selection-start-line="115" selection-start-column="10" selection-end-line="115" selection-end-column="10" />
                 </state>
               </provider>
             </entry>
@@ -140,6 +135,7 @@
       <find>activied</find>
       <find>picker</find>
       <find>#3cc51f</find>
+      <find>time</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -148,12 +144,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pages/review/login/login.wxml" />
         <option value="$PROJECT_DIR$/pages/review/choose-address/choose-address.wxss" />
         <option value="$PROJECT_DIR$/pages/review/choose-address/choose-address.wxml" />
         <option value="$PROJECT_DIR$/weui.wxss" />
         <option value="$PROJECT_DIR$/app.wxss" />
         <option value="$PROJECT_DIR$/pages/review/choose-address/choose-address.js" />
+        <option value="$PROJECT_DIR$/app.json" />
+        <option value="$PROJECT_DIR$/pages/review/login/login.wxss" />
+        <option value="$PROJECT_DIR$/pages/review/login/login.wxml" />
+        <option value="$PROJECT_DIR$/pages/review/login/login.js" />
       </list>
     </option>
   </component>
@@ -163,7 +162,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1284" />
@@ -192,6 +191,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -228,7 +228,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -267,20 +266,20 @@
       <workItem from="1537343702798" duration="4174000" />
       <workItem from="1537350567937" duration="595000" />
       <workItem from="1537405375212" duration="14784000" />
+      <workItem from="1537491841207" duration="9270000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19833000" />
+    <option name="totallyTimeSpent" value="29103000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1320" height="784" extended-state="6" />
+    <frame x="10" y="20" width="1284" height="728" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.21684867" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32973805" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -292,6 +291,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -304,16 +304,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pages/review/login/login.wxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="n#style#0;n#button#0;n#view#1;n#view#1;n#view#1;n#view#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/typings/weapp.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
@@ -321,17 +311,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/weui.wxss" />
     <entry file="file://$PROJECT_DIR$/pages/review/choose-address/choose-address.wxss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
+        <state relative-caret-position="969">
           <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.wxss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/review/choose-address/choose-address.wxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
-          <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
           <folding>
             <element signature="n#style#0;n#text#0;n#view#1;n#view#2;n#view#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#text#0;n#view#3;n#view#0;n#!!top" expanded="true" />
@@ -343,24 +341,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weui.wxss">
+    <entry file="file://$PROJECT_DIR$/app.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1630">
-          <caret line="1195" column="23" lean-forward="true" selection-start-line="1195" selection-start-column="23" selection-end-line="1195" selection-end-column="23" />
+        <state relative-caret-position="38">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.wxss">
+    <entry file="file://$PROJECT_DIR$/pages/review/login/login.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/review/login/login.wxss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="219">
+          <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/review/choose-address/choose-address.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="98" selection-start-line="98" selection-end-line="98" />
+        <state relative-caret-position="171">
+          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/review/login/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="115" column="10" lean-forward="true" selection-start-line="115" selection-start-column="10" selection-end-line="115" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/review/login/login.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
+          <folding>
+            <element signature="n#style#0;n#text#0;n#view#0;n#view#0;n#view#1;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#view#1;n#view#1;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#view#0;n#view#1;n#view#1;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#view#1;n#view#1;n#view#1;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#text#0;n#view#0;n#view#2;n#view#1;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#view#2;n#view#1;n#view#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
