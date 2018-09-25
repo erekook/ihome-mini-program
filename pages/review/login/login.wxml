@@ -29,12 +29,16 @@
       </view>
 
       <view class='div-item-right' >
-        <input style='height:32px;text-align: right;font-size: 14px;line-height:32px;' type="text" placeholder='请输入您的姓名' bindinput="handleNameInput" />
+        <input style='height:32px;text-align: right;font-size: 14px;line-height:32px;' type="text" value="{{name}}" placeholder='请输入您的姓名' bindinput="handleNameInput" />
       </view>
     </view>
 
-    <view style='margin-top: 54px;font-size: 17px;color: #E76055;text-align: center;' wx:if="{{!firstPageShow}}">
+    <view style='margin-top: 54px;font-size: 17px;color: #E76055;text-align: center;' wx:if="{{!firstPageShow && !showAddress}}" bindtap="handleChooseAddress">
       添加住址
+    </view>
+
+    <view class='div-item' style='margin-top: 54px;font-size: 17px;text-align: center;' wx:if="{{!firstPageShow && showAddress}}">
+      {{address+identity}}
     </view>
 
     <view class='content-bottom'>

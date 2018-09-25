@@ -12,14 +12,29 @@ Page({
     codeBtnText: '发送验证码',
     currentTime: 61,
     submitText: '下一步',
-    firstPageShow: true
+    firstPageShow: true,
+    showAddress: false,
+    address: '',
+    identity: '',
+    name: ''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log(options)
+    if (options.address) {
+      this.setData({
+        firstPageShow: false,
+        showAddress: true,
+        address: options.address,
+        identity: options.identity,
+        name: options.name,
+        loginTitle: '02 基本信息',
+        submitText: '确认并提交'
+      })
+    }
   },
 
   /**
@@ -92,20 +107,26 @@ Page({
 
   },
 
+
+  handleNameInput: function (e) {
+    this.setData({
+      name: e.detail.value
+    })
+  },
+
   /**
    * 获取验证码
    */
   handleGetCode: function () {
     var that = this
-    // 没有这步，重复点击会出现多个定时器
     var currentTime = that.data.currentTime
     console.log('begin')
     var interval = setInterval(function () {
       currentTime--
       that.setData({
+        codeBtnBackColor: '#e6e6e6',
         codeBtnText: currentTime + 's',
-        codeButtonDisabled: true,
-        codeBtnBackColor: '#e6e6e6'
+        codeButtonDisabled: true
       })
       if (currentTime <= 0) {
         clearInterval(interval)
@@ -116,6 +137,25 @@ Page({
         })
       }
     },1000)
+
+    // 发送验证码
+    // ...
+  },
+
+  /**
+   * 跳转到添加住址页面
+   */
+  handleChooseAddress: function () {
+    if (!this.data.name) {
+      wx.showToast({
+        title: '请输入姓名',
+        icon: 'none'
+      })
+      return
+    }
+    wx.navigateTo({
+        url: '/pages/review/choose-address/choose-address?name='+this.data.name
+    })
   },
 
   handleSubmit: function (e) {
@@ -124,6 +164,7 @@ Page({
       // 验证验证码是否正确
 
       this.setData({
+        loginTitle: '02 基本信息',
         submitText: '确认并提交',
         firstPageShow: false
       })

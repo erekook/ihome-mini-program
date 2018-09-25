@@ -43,8 +43,8 @@
     </view>
 
     <view style="width: 100%;display: flex;margin-top: 56px;">
-      <button class="btn-cancel btn">取消</button>
-      <button class="btn-submit btn">保存</button>
+      <button class="btn-cancel btn" bindtap="handleCancel">取消</button>
+      <button class="btn-submit btn" bindtap="handleSave">保存</button>
     </view>
 
 </view>

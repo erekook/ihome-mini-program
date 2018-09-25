@@ -16,7 +16,8 @@ Page({
     chooseTitle: '小区',
     address: '',
     identity: '',
-    popupShow: true
+    popupShow: true,
+    name: ''
   },
 
   /**
@@ -24,6 +25,7 @@ Page({
    */
   onLoad: function (options) {
     this.setData({
+      name: options.name,
       dataList: ['体验小区1', '体验小区2', '体验小区3']
     })
   },
@@ -197,6 +199,43 @@ Page({
         })
         break
     }
+  },
+
+  /**
+   * 取消按钮
+   */
+  handleCancel: function () {
+    wx.navigateBack({
+      delta: 1
+    })
+  },
+
+  /**
+   * 保存按钮
+   */
+  handleSave: function () {
+    if (!this.data.address) {
+      wx.showToast({
+        title: '请选择住址',
+        icon: 'none',
+      })
+      return
+    }
+
+    if (!this.data.identity) {
+      wx.showToast({
+        title: '请选择身份',
+        icon: 'none',
+      })
+      return
+    }
+
+    let address = this.data.address
+    let identity = this.data.identity
+    let name = this.data.name
+    wx.navigateTo({
+      url: '/pages/review/login/login?address=' + address + '&identity=' + identity + '&name=' + name
+    })
   }
 
 })
