@@ -1,7 +1,8 @@
 {
   "pages": [
+    "pages/service/service",
     "pages/review/login/login",
-    "pages/review/choose-address/choose-address",    
+    "pages/review/choose-address/choose-address",
     "pages/index/index"
   ],
   "window": {

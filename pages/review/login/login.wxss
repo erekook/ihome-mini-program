@@ -1,7 +1,10 @@
 /* pages/login/login.wxss */
 
 .container {
-  background-color: #E76055;
+  background-image: url('http://7qn9yb.com2.z0.glb.clouddn.com/png_login_background.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -moz-background-size:100% 100%;
 }
 
 .title {
@@ -34,8 +37,11 @@
   color: #fff;
 }
 
-.submit-btn {
+.content-bottom {
   margin-top: 60px;
+}
+
+.submit-btn {
   width: 210px;
   height: 44px;
   background-color: #E76055;

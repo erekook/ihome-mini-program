@@ -2,7 +2,7 @@
   <view class='title'>
     {{loginTitle}}
   </view>
-  <view class='content'>
+  <view class='content' wx:if="{{!submitSuccessShow}}">
     <view class='div-item' wx:if="{{firstPageShow}}">
       <view class='div-item-left'>
         <text style='height:32px;font-size: 17px;line-height:32px;'>手机号码</text>
@@ -33,8 +33,9 @@
       </view>
     </view>
 
-    <view style='margin-top: 54px;font-size: 17px;color: #E76055;text-align: center;' wx:if="{{!firstPageShow && !showAddress}}" bindtap="handleChooseAddress">
-      添加住址
+    <view class="vh-center" style='margin-top: 54px;' wx:if="{{!firstPageShow && !showAddress}}" bindtap="handleChooseAddress">
+      <image style="width: 20px;height: 20px;margin-right: 8px;" src="/images/icon_add.png"></image>
+      <text style='font-size: 17px;color: #E76055;text-align: center;line-height: 20px;'>添加住址</text>
     </view>
 
     <view class='div-item' style='margin-top: 54px;font-size: 17px;text-align: center;' wx:if="{{!firstPageShow && showAddress}}">
@@ -44,7 +45,24 @@
     <view class='content-bottom'>
       <button class='submit-btn' bindtap="handleSubmit">{{submitText}}</button>
     </view>
-  
+
+    <view class='content-bottom h-center'>
+      <image style="width: 200px;height: 112px;" src="/images/login_city.png"></image>
+    </view>
+
+  </view>
+
+  <view class="content" wx:if="{{submitSuccessShow}}">
+    <view class='h-center' style="margin-top: 7px">
+      <image style="width: 135px;height: 135px;" src="/images/login_submit_success.png"></image>
+    </view>
+    <view class='h-center' style="flex-direction: column;margin-top: 30px">
+      <text style="text-align: center;font-size: 17px;">恭喜您提交成功</text>
+      <text style="text-align: center;font-size: 17px;margin-top: 20px;">等待审核结果通知!</text>
+    </view>
+    <view class='content-bottom h-center'>
+      <image style="width: 200px;height: 112px;" src="/images/login_city.png"></image>
+    </view>
   </view>
 
 </view>

@@ -16,7 +16,8 @@ Page({
     showAddress: false,
     address: '',
     identity: '',
-    name: ''
+    name: '',
+    submitSuccessShow: false
   },
 
   /**
@@ -158,22 +159,22 @@ Page({
     })
   },
 
-  handleSubmit: function (e) {
-    console.log(e)
-    if (this.data.submitText === '下一步') {
+  handleSubmit: function () {
+    if (this.data.firstPageShow) {
+      // 下一步
       // 验证验证码是否正确
-
       this.setData({
         loginTitle: '02 基本信息',
         submitText: '确认并提交',
         firstPageShow: false
       })
-    }
-
-    if (this.data.submitText === '确认并提交') {
-          // ...
+    } else {
+      // 确认并提交
+      // ...
+      this.setData({
+        submitSuccessShow: true
+      })
     }
   }
-
 
 })

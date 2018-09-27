@@ -1,4 +1,5 @@
 @import 'font-awsome.wxss';
+@import 'weui.wxss';
 
 page {
   height: 100%;
@@ -17,6 +18,14 @@ page {
   border-bottom: 1px solid #e6e6e6;
 }
 
+.fl {
+  float: left;
+}
+
+.fa {
+  float: right;
+}
+
 .div-item-left {
   width: 50%;
   float: left;
@@ -25,7 +34,6 @@ page {
 .div-item-right {
   width: 50%;
   float: right;
-  height: 32px;
 }
 
 .btn-submit {
@@ -35,6 +43,7 @@ page {
 
 .btn {
   padding: 0;
+  margin: 0;
 }
 
 .btn-cancel {
@@ -46,5 +55,17 @@ page {
 .vh-center {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+/*水平居中*/
+.h-center {
+  display: flex;
+  justify-content: center;
+}
+
+/*垂直居中*/
+.v-center {
+  display: flex;
   align-items: center;
 }

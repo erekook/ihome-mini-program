@@ -1,0 +1,116 @@
+/* pages/service/service.wxss */
+page {
+  background-color: #F7F7F0;
+}
+
+.page {
+  background-color: #F7F7F0;
+  width: 100%;
+  height: 100%
+;
+}
+
+.tab-menu {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 48px;
+  background: white;
+}
+
+.tab-item {
+  width: 49%;
+  height: 48px;
+  font-size: 17px;
+}
+
+.tab-content {
+  width: 100%;
+  height: auto;
+}
+
+.type-btn {
+  width: 72px;
+  height: 28px;
+  color: white;
+  font-size: 14px;
+  line-height: 28px;
+}
+.submit-text {
+  /* 100% 375px  391 */
+  width: 100%;
+  height: 50px;
+  font-size: 14px;
+  border: none;
+}
+
+.div-item {
+  background: white;
+  width: 100%;
+  height: 56px;
+  border-bottom: 1px solid #e6e6e6;
+  display: inline-flex;
+  vertical-align: center;
+}
+
+.div-item-left {
+  width: 34%;
+  height: 100%;
+  /*padding-left: 10px;*/
+}
+
+.div-item-right {
+  width: 66%;
+  /*padding-right: 10px;*/
+  text-align: end;
+  font-size: 14px;
+  height: 100%;
+}
+
+.service-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.picker {
+  width: 100%;
+  background: white;
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+}
+
+.picker-top {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.picker-btn {
+  height: 40px;
+  font-size: 14px;
+}
+
+.picker-cancel{
+  margin-left: 16px;
+  color: #999;
+}
+
+.indicator {
+  height: 40px;
+  line-height: 40px;
+}
+
+.picker-ok{
+  text-align: right;
+  margin-right: 16px;
+  color: #E76055;
+}
+
+.picker-item {
+  text-align: center;
+  font-size: 16px;
+  line-height: 40px;
+}

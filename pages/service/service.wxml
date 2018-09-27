@@ -1,0 +1,96 @@
+<view class="page">
+    <view class="tab-content" hidden="{{activeIndex != 0}}">
+        <view style='flex-direction: column;background-color: white;padding: 0 16px'>
+
+            <view style="color: #999999;font-size: 14px;padding-top: 18px;">
+                请选择类型
+            </view>
+
+            <view class="div-item v-center">
+                <button class="btn type-btn" bindtap="handleRepair" style="background: {{categorySid == 'C733AA3D-32FA-4F5B-B299-061044661DC0' ? '#E76055' : '#e6e6e6' }}">公共报修</button>
+                <button class="btn type-btn" bindtap="handleComplaint" style="margin-left: 18px;background: {{categorySid == '7D2B996C-12EC-4CD4-8499-B453E96AF11F' ? '#E76055' : '#e6e6e6' }}">投诉建议</button>
+            </view>
+
+            <view class='div-item'>
+                <view class='div-item-left v-center'>
+                    <image src='/images/icon_service_category.png' class='service-icon'></image>
+                    <text style='font-size: 16px;margin-left: 12px;'>{{categoryName}}</text>
+                </view>
+                <view class='div-item-right v-center' style="justify-content: flex-end" bindtap="handleTypeChoice">
+                    <text style='color: #333333;font-size: 15px;'>{{typeName}}</text>
+                    <text class='fa fa-angle-right fa-2x' style="color: #B0B0B0;margin-left: 9px;" aria-hidden='true'></text>
+                </view>
+            </view>
+
+            <view class='service-desc' style='background-color: white;'>
+                <view class="div-item v-center" style='border: none'>
+                    <image src='/images/icon_text_note.png' class='service-icon'></image>
+                    <text style='font-size: 16px;margin-left: 12px;'>内容描述</text>
+                </view>
+                <label>
+                    <textarea class='submit-text' placeholder='请描述具体的报修位置'></textarea>
+                </label>
+                <view style="text-align: right;color: #999999;font-size: 12px;margin-bottom: 18px;">0/200</view>
+            </view>
+            <view style='padding-bottom: 12px;'>
+                <view class='div-item v-center' style='border-bottom: none;border-top: 1px solid #e6e6e6;'>
+                    <image src='/images/icon_picture.png' class='service-icon'></image>
+                    <text style='font-size: 16px;margin-left: 12px;'>上传图片</text>
+                    <text style="font-size: 14px;color: #999">(可选)</text>
+                </view>
+
+                <view class="weui-uploader">
+                    <view class="weui-uploader__bd">
+                        <block wx:for="{{imagesList}}" wx:key="*this" >
+                            <view class="weui-uploader__file" bindlongpress="deleteImage" data-index="{{index}}">
+                                <image class="weui-uploader__img" style="width: 58px;height: 58px;" src="{{item}}"></image>
+                            </view>
+                        </block>
+                        <view style="width: 58px;height: 58px;" class="weui-uploader__input-box" hidden="{{imagesList.length >= 4}}">
+                            <input  class="weui-uploader__input js_file" type="file" accept="image/jpg,image/jpeg,image/png,image/gif" multiple="" bindtap='uploader' name="images"/>
+                        </view>
+                    </view>
+                </view>
+                <view style="text-align:right;color: #999999;font-size: 12px">{{imagesList.length}}/4</view>
+            </view>
+
+
+        </view>
+
+        <button class="btn-submit" style="margin: 32px 28px 0 28px">提交</button>
+    </view>
+
+    <view class="tab-content" hidden="{{activeIndex != 1}}">
+        1
+    </view>
+
+    <cover-view hidden="{{typePickerHidden}}" class="mask" style="background-color: rgba(0,0,0,.8);width: 100%;height: 100%;z-index: 9;position: absolute;bottom: 0"></cover-view>
+    <!--<view hidden="{{typePickerHidden}}" class="mask" style="background-color: rgba(0,0,0,.8);width: 100%;height: 100%;z-index: 9;position: absolute;bottom: 0"></view>-->
+
+
+    <!--底部bar-->
+    <view class="tab-menu">
+        <view class="tab-item vh-center fl" bindtap="tabClick" id="0">
+            <text style="color: {{activeIndex == 0 ? '#E76055' : '#333333'}}">{{tabs[0]}}</text>
+        </view>
+        <view style="width: 1px;height: 100%;float: left;display: flex;align-items: center">
+            <view style="width: 1px;height: 18px;background-color: #BFBFBF;"></view>
+        </view>
+        <view class="tab-item vh-center fr" bindtap="tabClick" id="1">
+            <text style="color: {{activeIndex == 1 ? '#E76055' : '#333333'}}">{{tabs[1]}}</text>
+        </view>
+    </view>
+
+    <view class="picker" hidden="{{typePickerHidden}}">
+        <view class="picker-top">
+            <view class="picker-btn picker-cancel v-center" bindtap="handlePickerCancel">取消</view>
+            <view class="picker-btn picker-ok v-center" bindtap="handlePickerOk">完成</view>
+        </view>
+        <picker-view indicator-class="indicator" value="{{0}}" style="width: 100%;height: 240px;background-color: white" bindchange="handlePickerChange">
+            <picker-view-column style="background-color: white;">
+                <view class="picker-item" wx:for="{{repairTypes}}" wx:key="*this">{{item}}</view>
+            </picker-view-column>
+        </picker-view>
+    </view>
+
+</view>
